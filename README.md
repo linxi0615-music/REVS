@@ -1,7 +1,7 @@
 # REVS
 REVS  is a novel feature selection algorithm that formulates variable selection as a pure exploration problem in Combinatorial Multi-Armed Bandits (CMAB). The algorithm replaces BART with Random Forest as the reward evaluator, making it applicable to both regression and classification tasks.
 # REVS: Reinforced Exploration Variable Selection
-This repository is the official implementation of the paper REVS: A Reinforced Exploration Algorithm for Variable Selection via Thompson Sampling with Upper Confidence Bound-Augmented Variance。该算法将变量选择建模为组合多臂老虎机（Combinatorial Multi-Armed Bandit）的纯探索问题，在Thompson采样中融合UCB启发的不确定性增强策略。
+This repository is the official implementation of the paper REVS: A Reinforced Exploration Algorithm for Variable Selection via Thompson Sampling with Upper Confidence Bound-Augmented Variance。This algorithm models variable selection as a pure exploration problem of Combinatorial Multi-Armed Bandit and integrates the uncertainty enhancement strategy inspired by UCB in Thompson sampling.
 
 **Requirements** 
 REVS.R: the proposed algorithm in this paper.The core algorithm implementation of REVS includes a general framework and RF/BART reward functions
@@ -10,16 +10,27 @@ function：reward_bart or reward_rf: the reward of REVS
 
 TVS：TVS (Thompson Variable Selection),the algorithm in ''Variable Selection via Thompson Sampling (Yi Liu∗and Veronika Roˇckov´a† February 15, 2021)" .
 ## 📦 Software and main packages
+
 randomForest
+
 BART :BART Reward evaluator 
+
 glmnet
+
 LASSO
-SSLASSO:Spike-and-Slab LASSO 
+
+SSLASSO:Spike-and-Slab LASSO
+
 SIS:Sure Independence Screening 
+
 rpart:Decision tree estimator 
+
 dplyr : data processing
+
 ggplot2 : visual
+
 caret : model training and evaluation 
+
 readr :higher Data reading
 
 ## 💻Reproducibility
